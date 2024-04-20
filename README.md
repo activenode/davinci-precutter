@@ -14,6 +14,7 @@ The problem however is cutting those sources in a way that will remove the silen
 1. Use `auto-editor fileName.mkv --margin 0.2sec --export premiere` to create an XML file with the cuts to be imported in DaVinci. Then, if feasible, use the exact same file and replace the filename and clip name occurences to meet with the other file
 1. Now both files should be well-cut in davinci/premiere whatever and can still be changed. They should align
 1. If they don't, we can also sync them from the end and make a cut off at the end. This will ensure they can be in exact sync
+1. The final tool should not only combine these things and make them easily accessible (e.g. CLI) but also allow to add additional manual offset in case there was an audio/video delay (it probably just makes sense to substract/add it to `-ss`)
 
 
 
